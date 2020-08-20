@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VDarkBlue: hsl(229, 57%, 11%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg-desktop.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: var(--VDarkBlue);
+  font-family: "Raleway", sans-serif;
+  min-width: 1440px;
+  min-height: 100vh;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  font-weight: 500;
+  position: relative;
+}
+
+.main-head {
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  top: 350px;
+  left: 350px;
+  background-color: var(--DarkBlue);
+  border-radius: 10px;
+  border-top-right-radius: 40%;
+  padding: 30px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo-container {
+  /* float: left; */
+  background-color: var(--VDarkBlue);
+  display: flex;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-text {
+  position: absolute;
+  top: 380px;
+  left: 700px;
+  width: 500px;
+  height: 150px;
+  background-color: var(--DarkBlue);
+  border-radius: 10px;
+  color: #ffffff9f;
+  padding: 30px;
+}
+
+.main-text p {
+  margin-left: 20px;
+}
+
+.progression {
+  width: 400px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--VDarkBlue);
+  margin-left: 20px;
+}
+
+.progression-bar {
+  width: 80%;
+  height: 15px;
+  background-image: linear-gradient(
+    -90deg,
+    hsl(335, 100%, 65%),
+    hsl(6, 100%, 80%)
+  );
+  border-radius: 10px;
+}
+
+.zero,
+.max {
+  padding-top: 10px;
+}
+
+.max {
+  float: right;
+}
+
+.zero {
+  float: left;
+}
+
+.speech-container {
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  background-color: #fff;
+  /* padding: 20px; */
+  padding-top: 10px;
+  padding-left: 10px;
+  top: 350px;
+  left: 370px;
+  border-radius: 5px;
+}
+
+.speech-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+}
